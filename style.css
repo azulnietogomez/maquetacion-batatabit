@@ -409,3 +409,117 @@ background-color: var(--off-white);
 
 /*-----SECCION DE PLANES-----*/
 
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: black;
+}
+
+.plans--title p {
+    padding-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+/*-----TARJETAS SLIDE DE PRECIOS-----*/
+
+.plans-container--card {
+    margin: 0 auto;
+    width: 190px;
+    height: 247px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    margin-bottom: 50px;
+}
+
+.plans-container--card .recomended {
+    position: relative;
+    top: -15px;
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: var(--just-white);
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+}  
+
+.plans-container-details h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: black;
+}
+
+.plans-container-details .plan--dollar{
+    position: relative;
+    bottom: 10px;
+    font-size: 1.2rem;
+    vertical-align: text-top;
+    font-weight: 300;
+}
+
+.plans-container-details .plan--price {
+    font-family: var(--DM);
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-bottom: 15px;
+}
+
+.plans-container-details .plan-card--saving {   
+    font-family: var(--inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.plans-container-details .plan-card--ca {
+    width: 150px;
+    height: 50px;
+
+
+    background-color: var(--off-white);
+    border: solid 2px var(--bitcoin-orange);
+    border-radius: 4px;
+
+    font-family: var(--DM);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom;
+    margin-left: 5px;
+}
