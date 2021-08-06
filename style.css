@@ -34,6 +34,7 @@
 html {
     font-size: 62.5%;
     font-family: var(--DM);
+    scroll-behavior : smooth;
 }
 
 header {
@@ -115,6 +116,17 @@ background-color: var(--off-white);
 }
 
 /*-------Primera sección "Precios"*/
+
+
+.main-tables-container {
+    display: flex;
+    height: 380px;
+    overflow: scroll;
+    overscroll-behavior-x:  contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+
+}
 
 .main-exchange-container {
     width: 100%;
@@ -329,10 +341,11 @@ background-color: var(--off-white);
     color: #808080;
 }
 
-/* .product-cards--container {
+.product-cards--container {
     display: flex;
     flex-wrap: wrap;
-} */
+    justify-content: space-around;
+}
 
 .product-detail--card {
     width: 100%;
@@ -395,6 +408,7 @@ background-color: var(--off-white);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bitcoin-img-container h2 {
@@ -411,6 +425,10 @@ background-color: var(--off-white);
 
 
 .main-plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     min-width: 320px;
     padding-bottom: 70px;
@@ -442,6 +460,7 @@ background-color: var(--off-white);
 }
 
 /*-----TARJETAS SLIDE DE PRECIOS-----*/
+
 
 .plans-container--slider {
     display: flex;
@@ -545,5 +564,33 @@ background-color: var(--off-white);
 footer {
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+
+}
+
+footer .left-footer ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+
+}
+
+.left-footer li {
+    margin: 10px 0;
+
+}
+
+.left-footer a {
+    text-decoration: none;
+    color: var(--just-white);
 }
